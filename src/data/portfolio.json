@@ -1,0 +1,290 @@
+{
+  "personal": {
+    "name": "Rachael Dias",
+    "title": "AI Engineer & Computer Science Graduate",
+    "bio": "Passionate Computer Science graduate specializing in AI and machine learning. Currently working as an AI intern connecting LLMs with databases and building sales forecasting pipelines. Published researcher in AI collaboration with a unique focus on crochet pattern translation using Large Language Models.",
+    "location": "Tecom, Dubai, UAE",
+    "avatar": "/images/avatar.jpg",
+    "tagline": "Building AI magic, one algorithm at a time"
+  },
+  "skills": [
+    {
+      "name": "Python",
+      "category": "Programming",
+      "icon": "code"
+    },
+    {
+      "name": "LangChain",
+      "category": "AI/ML",
+      "icon": "brain"
+    },
+    {
+      "name": "PyTorch",
+      "category": "AI/ML",
+      "icon": "cpu"
+    },
+    {
+      "name": "BigQueryML",
+      "category": "AI/ML",
+      "icon": "zap"
+    },
+    {
+      "name": "Machine Learning",
+      "category": "AI/ML",
+      "icon": "brain"
+    },
+    {
+      "name": "JavaScript",
+      "category": "Programming",
+      "icon": "code"
+    },
+    {
+      "name": "Angular.js",
+      "category": "Programming",
+      "icon": "layers"
+    },
+    {
+      "name": "Java",
+      "category": "Programming",
+      "icon": "code"
+    },
+    {
+      "name": "D3.js",
+      "category": "Programming",
+      "icon": "eye"
+    },
+    {
+      "name": "Azure",
+      "category": "Tools",
+      "icon": "container"
+    },
+    {
+      "name": "SQL",
+      "category": "Programming",
+      "icon": "code"
+    },
+    {
+      "name": "Statistics & Probability",
+      "category": "AI/ML",
+      "icon": "brain"
+    },
+    {
+      "name": "Leadership",
+      "category": "Soft Skills",
+      "icon": "lightbulb"
+    },
+    {
+      "name": "Teaching & Mentoring",
+      "category": "Soft Skills",
+      "icon": "lightbulb"
+    },
+    {
+      "name": "Certification: AI-900",
+      "category": "Certification",
+      "icon": "award"
+    }
+  ],
+  "experience": [
+    {
+      "id": "exp-1",
+      "company": "Convz FZE",
+      "position": "Artificial Intelligence Intern",
+      "duration": "May 2025 - Present",
+      "location": "Dubai, UAE",
+      "description": [
+        "Utilizing LangGraph to connect LLMs with company databases to derive insights",
+        "Implementing sales-forecasting pipelines using BigQueryML, delivering forecasts for multiple clients",
+        "Working on cutting-edge AI solutions for business intelligence"
+      ],
+      "technologies": ["LangGraph", "LLMs", "BigQueryML", "Python", "Databases"],
+      "achievements": [
+        "Successfully connected multiple company databases with LLMs",
+        "Delivered accurate sales forecasting models for clients",
+        "Contributed to AI-driven business intelligence solutions"
+      ]
+    },
+    {
+      "id": "exp-2",
+      "company": "CircleBit",
+      "position": "Enterprise Software Engineer & Data Science Intern",
+      "duration": "June - Oct 2024",
+      "location": "Dubai, UAE",
+      "description": [
+        "Created a customer portal for freight forwarding solutions in Angular.js",
+        "Used D3.js for interactive dashboards and visualizing route information",
+        "Developed full-stack solutions for logistics industry"
+      ],
+      "technologies": ["Angular.js", "D3.js", "JavaScript", "Data Visualization"],
+      "achievements": [
+        "Built comprehensive customer portal for freight forwarding",
+        "Created interactive dashboards for route visualization",
+        "Delivered enterprise-level software solutions"
+      ]
+    },
+    {
+      "id": "exp-3",
+      "company": "Heriot-Watt University",
+      "position": "Teaching Assistant",
+      "duration": "September 2024 - April 2025",
+      "location": "Dubai, UAE",
+      "description": [
+        "Assisted in teaching labs and grading assignments for Computer Science students",
+        "Mentored students in programming concepts and problem-solving",
+        "Supported faculty in delivering quality education"
+      ],
+      "technologies": ["Computer Science Education", "Programming Languages", "Teaching"],
+      "achievements": [
+        "Successfully guided students through complex programming concepts",
+        "Maintained high standards in assignment grading",
+        "Contributed to improved student learning outcomes"
+      ]
+    },
+    {
+      "id": "exp-4",
+      "company": "The First Group",
+      "position": "IT Intern",
+      "duration": "May - Sept 2022",
+      "location": "Dubai, UAE",
+      "description": [
+        "Created a Reimbursement Claim application using the Microsoft Power Platform",
+        "Developed business automation solutions",
+        "Worked with enterprise-level Microsoft technologies"
+      ],
+      "technologies": ["Microsoft Power Platform", "Business Applications", "Automation"],
+      "achievements": [
+        "Successfully deployed reimbursement claim application",
+        "Improved business process efficiency",
+        "Gained experience with Microsoft enterprise solutions"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj-1",
+      "title": "Crochet Pattern Translation using LLMs",
+      "description": "First structured dataset for crochet and fine-tuned LLMs for pattern translation",
+      "longDescription": "Created the first structured dataset for crochet and fine-tuned various open-source LLMs for crochet pattern translation. Published at AAAI's Symposium on Human-AI Collaboration as 'Translation of User Crochet Patterns to CrochetPARADE syntax using Large Language Models'.",
+      "technologies": ["Large Language Models", "Python", "Dataset Creation", "Fine-tuning"],
+      "category": "AI Research",
+      "status": "Completed",
+      "githubUrl": "https://github.com/rachaeldias/crochet-llm",
+      "imageUrl": "/images/projects/crochet-research.jpg",
+      "featured": true
+    },
+    {
+      "id": "proj-2",
+      "title": "Sales Forecasting with BigQueryML",
+      "description": "ML pipelines for sales forecasting delivering predictions for multiple clients",
+      "longDescription": "Developed and implemented sales-forecasting pipelines using BigQueryML at Convz FZE, delivering accurate forecasts for multiple clients. Integrated with LangGraph to connect LLMs with company databases for enhanced insights.",
+      "technologies": ["BigQueryML", "LangGraph", "Python", "LLMs", "SQL"],
+      "category": "Engineering",
+      "status": "In Progress",
+      "imageUrl": "/images/projects/sales-forecasting.jpg",
+      "featured": true
+    },
+    {
+      "id": "proj-3",
+      "title": "Freight Forwarding Customer Portal",
+      "description": "Customer portal with interactive dashboards for freight forwarding solutions",
+      "longDescription": "Built a comprehensive customer portal for freight forwarding solutions using Angular.js at CircleBit. Created interactive dashboards with D3.js for visualizing route information and logistics data.",
+      "technologies": ["Angular.js", "D3.js", "JavaScript", "Data Visualization"],
+      "category": "Engineering",
+      "status": "Completed",
+      "imageUrl": "/images/projects/freight-portal.jpg",
+      "featured": false
+    },
+    {
+      "id": "proj-4",
+      "title": "Microsoft Power Platform Reimbursement App",
+      "description": "Business automation solution for reimbursement claims processing",
+      "longDescription": "Developed a Reimbursement Claim application using the Microsoft Power Platform at The First Group. Automated business processes and improved efficiency in expense management workflows.",
+      "technologies": ["Microsoft Power Platform", "Business Process Automation", "Enterprise Solutions"],
+      "category": "Engineering",
+      "status": "Completed",
+      "imageUrl": "/images/projects/reimbursement-app.jpg",
+      "featured": false
+    }
+  ],
+  "education": [
+    {
+      "id": "edu-1",
+      "institution": "Heriot-Watt University",
+      "degree": "BSc (Hons)",
+      "field": "Computer Science", 
+      "duration": "2021 - 2025",
+      "location": "Dubai, UAE",
+      "gpa": "90.6/100 ≈ 4.0 GPA",
+      "achievements": [
+        "ICL Prize - Best student on the BSc Computer Science programme (2022)",
+        "University Prize - Outstanding merit in Computer Science discipline (2022)",
+        "Deputy's Principal Award - Outstanding merit (2022, 2023, 2024, 2025)",
+        "Department Officer of the Year - Outstanding contribution as Department Officer (2025)",
+        "Academic Legend Award - Highest average score in DEP Engineering (2021)",
+        "Microsoft Learn Student Ambassador (July 2023 - Present)",
+        "Department Officer MACS - Led Math and Computer Science representatives (Aug 2024 - May 2025)"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "name": "Publication | AAAI's Symposium on Human-Al Collaboration",
+      "organization": "AAAI",
+      "year": "2025",
+      "description": "Published research on human-AI collaboration, focusing on crochet pattern translation using LLMs."
+    },
+    {
+      "name": "Deputy's Principal Award",
+      "organization": "Heriot-Watt University",
+      "year": "2022, 2023, 2024, 2025",
+      "description": "Awarded for outstanding merit and academic achievement throughout the degree program."
+    },
+    {
+      "name": "Department Officer of the Year",
+      "organization": "Heriot-Watt University",
+      "year": "2025",
+      "description": "Recognized for exceptional contribution as Department Officer in Math and Computer Science."
+    },
+    {
+      "name": "ICL Prize",
+      "organization": "Heriot-Watt University",
+      "year": "2022",
+      "description": "Best student on the BSc Computer Science programme for the year 2022."
+    },
+    {
+      "name": "University Prize",
+      "organization": "Heriot-Watt University",
+      "year": "2022",
+      "description": "Outstanding merit in Computer Science discipline for the year 2022."
+    },
+    {
+      "name": "Academic Legend Award",
+      "organization": "Heriot-Watt University",
+      "year": "2021",
+      "description": "Highest average score in DEP Engineering for the year 2021."
+    }
+  ],
+  "extraCurriculars": [
+    {
+      "activity": "Microsoft Learn Student Ambassador",
+      "organization": "Microsoft",
+      "description": "Part of a global group of campus leaders who are eager to help fellow students and develop technical and career skills for the future."
+    },
+    {
+      "activity": "Technovation Mentor",
+      "organization": "Technovation",
+      "description": "Guiding a team of high-school girls to create an application using Flutter to complete the online Technovation curriculum."
+    },
+    {
+      "activity": "Department Officer MACS",
+      "organization": "Heriot-Watt University",
+      "description": "Organized, led, and managed the representatives for each year within the Math and Computer Science courses."
+    }
+  ],
+  "contact": {
+    "email": "rachaeldias123@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/rachael-dias-379491229/",
+    "github": "https://github.com/rachaelteresa",
+    "phone": "+971543295910",
+    "resume": "/Rachael Dias - CV.pdf"
+  }
+}

@@ -1,0 +1,216 @@
+{
+  "personal": {
+    "name": "Your Name",
+    "title": "AI Engineer & Researcher",
+    "bio": "Passionate AI Engineer and Researcher who loves building intelligent systems while crafting adorable unicorn-themed projects. When not training models or writing code, you'll find me crocheting cute characters or collecting My Little Pony memorabilia.",
+    "location": "Your City, Your Country",
+    "avatar": "/images/avatar.jpg",
+    "tagline": "Building AI magic, one algorithm at a time"
+  },
+  "skills": [
+    {
+      "name": "Machine Learning",
+      "category": "AI/ML",
+      "level": 9,
+      "icon": "brain"
+    },
+    {
+      "name": "Deep Learning",
+      "category": "AI/ML", 
+      "level": 8,
+      "icon": "zap"
+    },
+    {
+      "name": "Python",
+      "category": "Programming",
+      "level": 9,
+      "icon": "code"
+    },
+    {
+      "name": "TensorFlow/PyTorch",
+      "category": "AI/ML",
+      "level": 8,
+      "icon": "cpu"
+    },
+    {
+      "name": "Natural Language Processing",
+      "category": "AI/ML",
+      "level": 7,
+      "icon": "message-square"
+    },
+    {
+      "name": "Computer Vision",
+      "category": "AI/ML",
+      "level": 7,
+      "icon": "eye"
+    },
+    {
+      "name": "JavaScript/TypeScript",
+      "category": "Programming",
+      "level": 8,
+      "icon": "code"
+    },
+    {
+      "name": "React/Next.js",
+      "category": "Programming",
+      "level": 8,
+      "icon": "layers"
+    },
+    {
+      "name": "Docker & Kubernetes",
+      "category": "Tools",
+      "level": 7,
+      "icon": "container"
+    },
+    {
+      "name": "Creative Problem Solving",
+      "category": "Soft Skills",
+      "level": 9,
+      "icon": "lightbulb"
+    }
+  ],
+  "experience": [
+    {
+      "id": "exp-1",
+      "company": "AI Innovation Labs",
+      "position": "Senior AI Engineer",
+      "duration": "2022 - Present",
+      "location": "Remote",
+      "description": [
+        "Lead a team of 5 engineers in developing cutting-edge AI solutions for healthcare applications",
+        "Built and deployed machine learning models serving 1M+ users daily",
+        "Architected scalable MLOps pipelines reducing deployment time by 70%"
+      ],
+      "technologies": ["Python", "TensorFlow", "Kubernetes", "AWS", "MLflow"],
+      "achievements": [
+        "Reduced model inference latency by 60% through optimization",
+        "Led successful migration to cloud-native ML platform",
+        "Mentored 3 junior engineers to senior level"
+      ]
+    },
+    {
+      "id": "exp-2", 
+      "company": "Tech Startup Inc.",
+      "position": "AI Research Scientist",
+      "duration": "2020 - 2022",
+      "location": "San Francisco, CA",
+      "description": [
+        "Researched novel deep learning architectures for computer vision tasks",
+        "Published 4 peer-reviewed papers in top-tier AI conferences",
+        "Collaborated with product teams to translate research into production features"
+      ],
+      "technologies": ["PyTorch", "CUDA", "OpenCV", "Weights & Biases", "Jupyter"],
+      "achievements": [
+        "Achieved state-of-the-art results on ImageNet classification",
+        "Patent filed for novel attention mechanism",
+        "Presented research at NeurIPS and ICLR conferences"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj-1",
+      "title": "UnicornGPT - AI Chat Companion",
+      "description": "A whimsical AI chatbot that combines advanced NLP with unicorn personality",
+      "longDescription": "Built a delightful AI companion that provides helpful responses while maintaining a magical unicorn personality. Uses fine-tuned language models with custom prompt engineering to create engaging, helpful, and adorable conversations.",
+      "technologies": ["Python", "OpenAI API", "Streamlit", "Docker"],
+      "category": "AI Research",
+      "status": "Completed",
+      "githubUrl": "https://github.com/yourusername/unicorngpt",
+      "liveUrl": "https://unicorngpt.demo.com",
+      "imageUrl": "/images/projects/unicorngpt.jpg",
+      "featured": true
+    },
+    {
+      "id": "proj-2",
+      "title": "Crochet Pattern Generator AI",
+      "description": "ML model that generates unique crochet patterns from text descriptions",
+      "longDescription": "Developed a computer vision and NLP system that can generate detailed crochet patterns from simple text descriptions. The model understands stitch types, color combinations, and pattern complexity to create printable instructions.",
+      "technologies": ["TensorFlow", "Python", "Computer Vision", "NLP"],
+      "category": "AI Research", 
+      "status": "In Progress",
+      "githubUrl": "https://github.com/yourusername/crochet-ai",
+      "imageUrl": "/images/projects/crochet-ai.jpg",
+      "featured": true
+    },
+    {
+      "id": "proj-3",
+      "title": "My Little Pony Character Classifier",
+      "description": "Deep learning model to identify and classify MLP characters with 98% accuracy",
+      "longDescription": "A fun computer vision project that can identify My Little Pony characters from images with high accuracy. Includes data collection, model training, and a cute web interface for testing.",
+      "technologies": ["PyTorch", "OpenCV", "FastAPI", "React"],
+      "category": "Personal",
+      "status": "Completed",
+      "githubUrl": "https://github.com/yourusername/mlp-classifier",
+      "liveUrl": "https://mlp-classifier.demo.com",
+      "imageUrl": "/images/projects/mlp-classifier.jpg", 
+      "featured": false
+    }
+  ],
+  "education": [
+    {
+      "id": "edu-1",
+      "institution": "University of Technology", 
+      "degree": "Master of Science",
+      "field": "Artificial Intelligence",
+      "duration": "2018 - 2020",
+      "gpa": "3.9/4.0",
+      "achievements": [
+        "Graduated Summa Cum Laude",
+        "Research Assistant in Computer Vision Lab",
+        "Published thesis on novel neural network architectures"
+      ]
+    },
+    {
+      "id": "edu-2",
+      "institution": "State University",
+      "degree": "Bachelor of Science", 
+      "field": "Computer Science",
+      "duration": "2014 - 2018",
+      "gpa": "3.7/4.0",
+      "achievements": [
+        "Dean's List for 6 semesters",
+        "President of AI/ML Student Club",
+        "Winner of University Hackathon 2017"
+      ]
+    }
+  ],
+  "hobbies": [
+    {
+      "name": "Amigurumi Crocheting",
+      "description": "Creating adorable stuffed animals and characters using Japanese crochet techniques",
+      "category": "Crocheting",
+      "imageUrl": "/images/hobbies/amigurumi.jpg",
+      "level": "Advanced"
+    },
+    {
+      "name": "My Little Pony Collecting",
+      "description": "Collecting vintage and modern My Little Pony figures, with a focus on unicorns",
+      "category": "My Little Pony",
+      "imageUrl": "/images/hobbies/mlp-collection.jpg", 
+      "level": "Expert"
+    },
+    {
+      "name": "Digital Art",
+      "description": "Creating cute unicorn and pony illustrations using digital tools",
+      "category": "Arts & Crafts",
+      "imageUrl": "/images/hobbies/digital-art.jpg",
+      "level": "Intermediate"
+    },
+    {
+      "name": "Unicorn Theme Crafting",
+      "description": "Making unicorn-themed decorations, accessories, and gifts",
+      "category": "Unicorns",
+      "imageUrl": "/images/hobbies/unicorn-crafts.jpg",
+      "level": "Advanced"
+    }
+  ],
+  "contact": {
+    "email": "hello@yourname.com",
+    "linkedin": "https://linkedin.com/in/yourname",
+    "github": "https://github.com/yourusername",
+    "twitter": "https://twitter.com/yourusername",
+    "website": "https://yourname.com",
+    "resume": "/resume.pdf"
+  }
+}

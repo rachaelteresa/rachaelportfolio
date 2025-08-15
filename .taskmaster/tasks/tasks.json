@@ -1,0 +1,143 @@
+{
+  "master": {
+    "tasks": [
+      {
+        "id": 1,
+        "title": "Project Foundation & Repository Setup",
+        "description": "Initialize the Next.js 14 project with TypeScript and Tailwind CSS. Set up the GitHub repository and configure it for GitHub Pages deployment.",
+        "details": "This task includes running `create-next-app` with the App Router, installing Tailwind CSS, setting up `tsconfig.json`, and creating the GitHub repository. This is the foundational step for all subsequent development.",
+        "testStrategy": "Verify that the Next.js development server runs without errors. Confirm the GitHub repository is created and the initial commit is pushed successfully.",
+        "priority": "high",
+        "dependencies": [],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 2,
+        "title": "Define Data Models and JSON Structure",
+        "description": "Create TypeScript interfaces for all portfolio content (PersonalInfo, Skill, Experience, Project, etc.) and set up the initial JSON data files.",
+        "details": "Based on the PRD's 'Data Models' section, implement the `Portfolio` interface and all nested types in a dedicated `types.ts` file. Create a `data` directory with placeholder JSON files that conform to these interfaces.",
+        "testStrategy": "Ensure the TypeScript project compiles without type errors. Validate the structure of the placeholder JSON files against the defined interfaces.",
+        "priority": "high",
+        "dependencies": [
+          1
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 3,
+        "title": "Implement Core Layout and Navigation",
+        "description": "Develop the main application layout including a responsive header, footer, and navigation system using Next.js App Router and shadcn/ui components.",
+        "details": "Create a root layout file (`layout.tsx`) that includes a persistent header and footer. The header should contain a navigation bar that will link to the different portfolio sections. Ensure the layout is mobile-first and responsive.",
+        "testStrategy": "Check that the header and footer are present on all pages. Test the responsiveness of the layout across mobile, tablet, and desktop breakpoints.",
+        "priority": "high",
+        "dependencies": [
+          1
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 4,
+        "title": "Develop and Populate Core Professional Sections",
+        "description": "Create React components for the Hero, About, Skills, Experience, and Projects sections. These components must dynamically render content from the JSON data files.",
+        "details": "For each section, build a component that imports and consumes data from the JSON files created in Task 2. Focus on correctly structuring and displaying the professional content. Initial styling should be minimal.",
+        "testStrategy": "Verify that content from the JSON files is correctly displayed in each section. Manually change a value in the JSON and confirm the website updates on refresh.",
+        "priority": "high",
+        "dependencies": [
+          2,
+          3
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 5,
+        "title": "Implement Basic Pink Theme and Styling",
+        "description": "Apply the core pink color palette using Tailwind CSS variables. Style the core components and sections to create a cohesive visual identity.",
+        "details": "Configure `tailwind.config.js` with the pink theme colors (e.g., rose, pink, fuchsia). Apply these theme colors to backgrounds, text, buttons, and links throughout the application to establish the 'PinkPortfolio' brand.",
+        "testStrategy": "Visually inspect all components to ensure they adhere to the pink theme. Use browser developer tools to confirm that custom CSS variables are being applied correctly.",
+        "priority": "medium",
+        "dependencies": [
+          4
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 6,
+        "title": "Configure CI/CD for Automated Deployment",
+        "description": "Set up a GitHub Actions workflow to automatically build the static Next.js site and deploy it to GitHub Pages upon pushes to the main branch.",
+        "details": "Create a `.github/workflows/deploy.yml` file. Configure the Next.js project for static export by setting `output: 'export'` in `next.config.js`. The workflow should install dependencies, run the build, and deploy the `out` directory.",
+        "testStrategy": "Push a change to the main branch and verify that the GitHub Action runs successfully. Check the live GitHub Pages URL to confirm the deployment was successful.",
+        "priority": "high",
+        "dependencies": [
+          1
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 7,
+        "title": "Integrate Interactive Animations and Micro-interactions",
+        "description": "Implement micro-interactions like hover effects, sparkle effects, and page transitions using Framer Motion and CSS transforms to enhance user experience.",
+        "details": "Install Framer Motion. Add hover animations to interactive elements like buttons and project cards. Implement a simple fade-in animation for sections as they scroll into view.",
+        "testStrategy": "Interact with all clickable and hoverable elements to ensure animations are smooth and performant. Test on both desktop and mobile devices to check for performance issues.",
+        "priority": "medium",
+        "dependencies": [
+          5
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 8,
+        "title": "Add Unicorn-Themed Visual Elements",
+        "description": "Create and integrate the floating unicorn cursor trail and other unicorn-themed visual elements like custom SVG icons and particle effects.",
+        "details": "Develop or integrate a library for a custom cursor trail effect. Design or source simple unicorn/sparkle SVGs and replace standard icons where appropriate to fit the theme.",
+        "testStrategy": "Move the cursor around the page to verify the trail effect works as expected. Check that custom SVG icons are displayed correctly and are visually appealing.",
+        "priority": "low",
+        "dependencies": [
+          7
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 9,
+        "title": "Build the Hobby & Arts Showcase Section",
+        "description": "Create a dedicated section to showcase hobbies like crocheting and arts & crafts, pulling data from the `hobbies` array in the JSON file.",
+        "details": "Design a new component for the hobbies section, likely using a gallery or card-based layout. This component will render data from the `hobbies` part of the main JSON file. Add a link to this section in the main navigation.",
+        "testStrategy": "Verify the hobby section displays correctly with content from the JSON file. Ensure it is properly integrated into the site's navigation and overall layout.",
+        "priority": "low",
+        "dependencies": [
+          4
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 10,
+        "title": "Accessibility, Performance, and SEO Optimization",
+        "description": "Conduct a final review to ensure accessibility compliance (WCAG), optimize images and animations for fast loading, and add basic SEO meta tags.",
+        "details": "Use tools like Lighthouse and axe to audit the site. Address any contrast ratio issues with the pink theme. Compress all images and ensure animations are performant. Add unique title and meta description tags for each page.",
+        "testStrategy": "Run a Lighthouse audit and aim for a score above 90 in all categories. Use an accessibility checker to confirm WCAG compliance. Verify meta tags are present using browser developer tools.",
+        "priority": "medium",
+        "dependencies": [
+          5,
+          6,
+          8,
+          9
+        ],
+        "status": "pending",
+        "subtasks": []
+      }
+    ],
+    "metadata": {
+      "created": "2025-08-14T19:29:20.295Z",
+      "updated": "2025-08-14T19:29:20.295Z",
+      "description": "Tasks for master context"
+    }
+  }
+}

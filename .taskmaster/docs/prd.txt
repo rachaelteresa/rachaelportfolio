@@ -1,0 +1,147 @@
+<context>
+# Overview  
+PinkPortfolio is a cute, pink-themed portfolio website designed for an AI Engineer and Researcher who loves unicorns, My Little Pony, crocheting, and arts & crafts. The platform solves the challenge of creating a professional yet personal online presence that showcases technical expertise while celebrating individual personality and interests. The target user is the portfolio owner who needs an easy way to maintain and update their professional content through simple JSON file modifications, without requiring ongoing development work.
+
+# Core Features  
+## JSON-Driven Content Management
+- **What it does**: All portfolio content (personal info, skills, experience, projects) is stored in structured JSON files
+- **Why it's important**: Enables non-technical content updates without code changes, ensuring long-term maintainability
+- **How it works**: TypeScript interfaces define data structure, React components consume JSON data dynamically
+
+## Cute Pink Theme with Unicorn Elements
+- **What it does**: Implements a cohesive pink color palette with unicorn/My Little Pony themed animations and visual elements
+- **Why it's important**: Creates a unique, memorable brand identity that stands out from typical developer portfolios
+- **How it works**: Custom CSS variables for pink theme, SVG animations, particle effects, and themed icons
+
+## Professional AI Engineering Showcase
+- **What it does**: Dedicated sections for AI research, technical skills, project portfolios, and professional experience
+- **Why it's important**: Maintains credibility and demonstrates technical expertise to potential employers/collaborators
+- **How it works**: Structured layouts for technical content, project galleries, skill progression indicators
+
+## Interactive Animations and Micro-interactions
+- **What it does**: Floating unicorn cursor trails, hover animations, sparkle effects, and My Little Pony character interactions
+- **Why it's important**: Creates delightful user experience that reflects personality while maintaining professionalism
+- **How it works**: Framer Motion for animations, CSS transforms, and custom SVG graphics
+
+# User Experience  
+## User Personas
+- **Primary**: The portfolio owner (AI engineer/researcher who updates content via JSON)
+- **Secondary**: Potential employers, collaborators, and professional contacts viewing the portfolio
+- **Tertiary**: Friends and personal contacts who appreciate the creative/hobby elements
+
+## Key User Flows
+1. **Content Updates**: Owner edits JSON files → commits to GitHub → automatic deployment via GitHub Actions
+2. **Professional Viewing**: Visitor lands on hero → explores technical skills/projects → contacts via social links
+3. **Personal Discovery**: Visitor discovers hobby sections → engages with interactive elements → shares portfolio
+
+## UI/UX Considerations
+- Mobile-first responsive design with touch-friendly interactions
+- Clear information hierarchy balancing professional content with playful elements
+- Accessibility compliance with proper contrast ratios despite pink theme
+- Fast loading times with optimized images and animations
+</context>
+<PRD>
+# Technical Architecture  
+## System Components
+- **Frontend**: Next.js 14 (App Router) with TypeScript for type-safe development
+- **Styling**: Tailwind CSS for utility-first styling + shadcn/ui for consistent components
+- **Animations**: Framer Motion for complex animations, CSS transforms for performance
+- **Icons**: Lucide React for standard icons + custom SVG graphics for unicorn/pony elements
+
+## Data Models
+```typescript
+interface Portfolio {
+  personal: PersonalInfo;
+  skills: Skill[];
+  experience: Experience[];
+  projects: Project[];
+  education: Education[];
+  hobbies: Hobby[];
+  contact: ContactInfo;
+}
+```
+
+## APIs and Integrations
+- Static JSON files (no external APIs for MVP)
+- GitHub API integration for automatic project syncing (future enhancement)
+- Contact form integration with Formspree or similar service
+
+## Infrastructure Requirements
+- GitHub repository with Pages deployment
+- GitHub Actions for automated build and deployment
+- CDN via GitHub Pages for global content delivery
+
+# Development Roadmap  
+## MVP Requirements (Phase 1)
+- Basic Next.js setup with TypeScript and Tailwind CSS
+- JSON data structure and TypeScript interfaces
+- Core portfolio sections: Hero, About, Skills, Experience, Projects, Contact
+- Basic pink theme implementation
+- Responsive layout for mobile and desktop
+- GitHub Pages deployment workflow
+
+## Enhanced Features (Phase 2)
+- Interactive animations and micro-interactions
+- Unicorn cursor trails and hover effects
+- Advanced pink theme with gradients and particles
+- Hobby/arts & crafts showcase section
+- SEO optimization and meta tags
+
+## Advanced Features (Phase 3)
+- My Little Pony character animations
+- Advanced particle systems and visual effects
+- Blog section for AI research posts
+- Project filtering and search functionality
+- Contact form with email integration
+
+# Logical Dependency Chain
+## Foundation (Must be completed first)
+1. **Repository Setup**: Git initialization, GitHub Pages configuration
+2. **Next.js Boilerplate**: Basic app structure, TypeScript configuration, Tailwind setup
+3. **Data Architecture**: JSON schema design, TypeScript interfaces, data loading utilities
+
+## Core Implementation (Build upon foundation)
+4. **Layout System**: Header, footer, navigation, responsive grid system
+5. **Basic Sections**: Hero section with minimal styling, about page, contact page
+6. **Content Integration**: JSON data consumption, dynamic content rendering
+
+## Progressive Enhancement (Can be built iteratively)
+7. **Styling Enhancement**: Pink theme implementation, custom components
+8. **Interactive Features**: Animations, hover effects, micro-interactions
+9. **Advanced Visuals**: Unicorn elements, particle effects, character animations
+
+# Risks and Mitigations  
+## Technical Challenges
+- **Risk**: GitHub Pages static export limitations with Next.js dynamic features
+- **Mitigation**: Configure Next.js for static generation, avoid server-side features, test deployment early
+
+- **Risk**: Animation performance on mobile devices
+- **Mitigation**: Use CSS transforms instead of layout changes, implement will-change property, test on low-end devices
+
+## MVP Definition and Scope
+- **Risk**: Feature creep with too many cute elements overshadowing professional content
+- **Mitigation**: Prioritize professional sections in MVP, add whimsical elements progressively
+
+- **Risk**: Pink theme causing accessibility issues with contrast ratios
+- **Mitigation**: Test with accessibility tools, provide sufficient contrast alternatives, follow WCAG guidelines
+
+## Resource Constraints
+- **Risk**: Complex animations requiring significant development time
+- **Mitigation**: Start with simple CSS animations, use pre-built animation libraries, iterate on complexity
+
+- **Risk**: Custom SVG graphics and illustrations being time-intensive
+- **Mitigation**: Use existing icon libraries where possible, create simple SVG elements first, enhance over time
+
+# Appendix  
+## Technical Specifications
+- **Node.js**: Version 18+ for Next.js compatibility
+- **Browser Support**: Modern browsers (Chrome 90+, Firefox 88+, Safari 14+)
+- **Performance Targets**: <3s initial load time, >90 Lighthouse score
+- **Responsive Breakpoints**: Mobile (320px+), Tablet (768px+), Desktop (1024px+)
+
+## Research Findings
+- GitHub Pages supports static Next.js exports with proper configuration
+- Framer Motion provides good balance of features and performance for animations
+- Tailwind CSS pink color palette offers good professional options (rose, pink, fuchsia)
+- shadcn/ui components are highly customizable for theme implementation
+</PRD>
