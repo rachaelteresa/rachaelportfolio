@@ -8,7 +8,7 @@ import { Portfolio } from '@/types/portfolio';
 import portfolioData from '@/data/portfolio.json';
 
 const isGithubPages = process.env.NODE_ENV === 'production' && typeof window !== 'undefined';
-const basePath = isGithubPages ? '/PinkPortfolio' : '';
+const basePath = isGithubPages ? '' : '';
 
 export function getPortfolioData(): Portfolio {
   const data = { ...portfolioData } as Portfolio;
